@@ -484,9 +484,9 @@ async def enter_phone(message: types.Message, state: FSMContext):
 
 
 async def main():
-  print("Бот запущена!")
     await bot.delete_webhook(drop_pending_updates=True)
-  await dp.start_polling(bot)
+    await dp.start_polling(bot)
+
 
 
 if __name__ == "__main__":
